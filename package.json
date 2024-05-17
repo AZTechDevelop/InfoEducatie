@@ -1,7 +1,8 @@
 {
-  "homepage": "https://AZTechDevelop.github.io/InfoEducatie",
+  
   "proxy": "http://localhost:3000",
   "name": "infoeducatie",
+  "homepage": "https://AZTechDevelop.github.io/InfoEducatie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
