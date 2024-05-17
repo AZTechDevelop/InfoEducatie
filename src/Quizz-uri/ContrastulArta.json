@@ -1,0 +1,55 @@
+{
+    "intrebari": [
+      {
+        "intrebare": "Ce set de culori este folosit în sistemul aditiv, cum ar fi ecranele digitale?",
+        "optiuni": ["roșu, verde, albastru", "roșu, verde, galben", "roșu, albastru, violet", "verde, albastru, violet"],
+        "raspunsCorect": "roșu, verde, albastru"
+      },
+      {
+        "intrebare": "Ce culori sunt considerate culori secundare?",
+        "optiuni": ["roșu, albastru, galben", "portocaliu, verde, violet", "roșu-portocaliu, albastru-verde", "galben, violet, albastru"],
+        "raspunsCorect": "portocaliu, verde, violet"
+      },
+      {
+        "intrebare": "Ce descriere se potrivește culorilor terțiare?",
+        "optiuni": ["Culori obținute prin amestecarea a două culori primare", "Culori rezultate din combinarea unei culori primare cu o secundară adiacentă", "Culori de bază din care se pot obține toate celelalte", "Nuanțe care includ alb și negru"],
+        "raspunsCorect": "Culori rezultate din combinarea unei culori primare cu o secundară adiacentă"
+      },
+      {
+        "intrebare": "Care dintre următoarele opțiuni descrie o schemă de culori monocromatice?",
+        "optiuni": ["Folosește culori situate direct opus pe roata culorilor", "Folosește diferite tonuri și intensități ale aceleiași culori", "Folosește patru culori echidistante pe roata culorilor", "Folosește trei culori la distanțe egale pe roata culorilor"],
+        "raspunsCorect": "Folosește diferite tonuri și intensități ale aceleiași culori"
+      },
+      {
+        "intrebare": "Ce efect are utilizarea culorilor analoge în design?",
+        "optiuni": ["Creează un efect vizual liniștitor și plăcut", "Ofere un contrast vizual electrizant", "Facilitează un echilibru vizual simplu", "Generează un impact vizual puternic și captivant"],
+        "raspunsCorect": "Creează un efect vizual liniștitor și plăcut"
+      },
+      {
+        "intrebare": "Care culoare este complementară pentru albastru?",
+        "optiuni": ["Galben", "Violet", "Verde", "Portocaliu"],
+        "raspunsCorect": "Portocaliu"
+      },
+      {
+        "intrebare": "Ce reprezintă o schemă de culori complementare împărțite?",
+        "optiuni": ["Combină două seturi de culori complementare", "Alege o culoare și combină-o cu două adiacente opusului său direct", "Alege trei culori care sunt la distanțe egale pe roata culorilor", "Selectează patru culori care sunt echidistante pe roata culorilor"],
+        "raspunsCorect": "Alege o culoare și combină-o cu două adiacente opusului său direct"
+      },
+      {
+        "intrebare": "Ce descrie cel mai bine o schemă de culori dublu complementară?",
+        "optiuni": ["Împerechează două seturi de culori complementare", "Folosește culori din opusurile directe ale roții culorilor", "Combină culori care sunt echidistante pe roata culorilor", "Utilizează nuanțe diferite ale aceleiași culori"],
+        "raspunsCorect": "Împerechează două seturi de culori complementare"
+      },
+      {
+        "intrebare": "Ce scheme de culori formează un patrat pe roata culorilor?",
+        "optiuni": ["Dubla Complementaritate", "Diada", "Patrat sau Dreptunghi", "Triada"],
+        "raspunsCorect": "Patrat sau Dreptunghi"
+      },
+      {
+        "intrebare": "Care este caracteristica principală a unei scheme de culori triadice?",
+        "optiuni": ["Alege două culori care sunt separate de o altă culoare", "Combină trei culori la distanțe egale pe roata culorilor", "Folosește diferite tonuri ale aceleiași culori", "Împerechează culori din opusurile roții culorilor"],
+        "raspunsCorect": "Combină trei culori la distanțe egale pe roata culorilor"
+      }
+    ]
+  }
+  

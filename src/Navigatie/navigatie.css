@@ -1,0 +1,6 @@
+.btn {
+    @apply block text-center  hover:bg-gray-700 lg:text-3xl  hover:rounded-xl;
+    font-size:42px;
+  }
+
+  

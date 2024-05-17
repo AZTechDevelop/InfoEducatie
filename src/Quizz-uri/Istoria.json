@@ -1,0 +1,43 @@
+[
+    {
+        "intrebare": "Ce mineral are o culoare rosiatica ?",
+        "optiuni": ["carbune", "ocru", "hematit", "quartz"],
+        "raspunsCorect": "ocru"
+    },
+    {
+        "intrebare": "Pentru decorarea templelor si a mormintelor egiptenii au inventat ..... egiptean",
+        "optiuni": ["albastru", "rosul", "verdele", "galbenul"],
+        "raspunsCorect": "albastru"
+    },
+    {
+        "intrebare": "In Roma si Grecia Antica culoarea regalitatii este ?",
+        "optiuni": ["galben", "albastru", "rosu", "mov"],
+        "raspunsCorect": "mov"
+    },
+    {
+        "intrebare": "In ce epoca utilizarea pigmentilor a fost in concordanta cu religia",
+        "optiuni": ["Evul Mediu", "Antichitate", "Epoca Moderna", "Preistoria"],
+        "raspunsCorect": "Evul Mediu"
+    },
+    {
+        "intrebare": "Care dintre urmatorii artisti NU este renascentist ?",
+        "optiuni": ["Vincent van Gogh", "Rafael", "Michelangelo", "Tiziano"],
+        "raspunsCorect": "Vincent van Gogh"
+    },
+    {
+        "intrebare": "Ce material exotic a fost adus din Orient în timpul Renașterii pentru a fabrica un pigment albastru intens?",
+        "optiuni": ["Malachit", "Lapis lazuli", "Azurit", "Ocher"],
+        "raspunsCorect": "Lapis lazuli"
+    },
+    {
+        "intrebare": "Ce efect a avut comerțul extins în timpul Renașterii asupra accesului la pigmenți?",
+        "optiuni": ["A redus varietatea pigmenților", "A scumpit pigmenții", "A facilitat accesul la materiale exotice", "A limitat inovațiile tehnologice"],
+        "raspunsCorect": "A facilitat accesul la materiale exotice"
+    },
+    {
+        "intrebare": "Ce progrese majore în chimia organică și sintetică au avut loc în secolul 20?",
+        "optiuni": ["Dezvoltarea de pigmenți naturali mai eficienți", "Cresterea complexității structurilor moleculare naturale", "Dezvoltarea unei game extinse de coloranți sintetici", "Redescoperirea pigmentilor vechi"],
+        "raspunsCorect": "Dezvoltarea unei game extinse de coloranți sintetici"
+    }
+
+]

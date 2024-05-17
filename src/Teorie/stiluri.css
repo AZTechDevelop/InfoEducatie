@@ -1,0 +1,42 @@
+h2{
+    @apply text-3xl text-blue-900 text-start mx-4 indent-10 font-bold my-6;
+}
+
+h1{
+    @apply text-4xl text-red-400 text-center font-bold mb-10
+}
+h3{
+    @apply text-2xl text-purple-800 font-bold ml-10 my-4;
+}
+
+strong{
+    @apply text-2xl p-3 indent-8 ;
+  
+}
+li{
+    @apply text-2xl my-4
+}
+h4{
+    @apply  text-orange-600 indent-20 font-bold;
+    font-size:26px;
+}
+hr{
+    background:gray;
+   
+    
+    height: 3px;
+    width:90%;
+    margin:30px auto 30px auto;
+}
+p{
+    @apply text-2xl ;
+}
+
+.textToBg{
+    font-weight: bold; 
+    color: transparent; 
+    background: url('../imagini/albastru.jpeg'); 
+    -webkit-background-clip: text; 
+    display: inline-block
+}
+

@@ -1,0 +1,14 @@
+.btn1{
+    @apply truncate bg-gray-600 px-5 py-3 w-1/5 h-16 text-4xl rounded-lg text-white hover:bg-gray-800 duration-500 lg:text-3xl sm:text-xl md:text-xs;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+
+label{
+    @apply text-2xl my-3;
+}
+
+

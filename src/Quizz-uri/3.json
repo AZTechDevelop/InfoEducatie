@@ -1,0 +1,27 @@
+[
+    {
+        "intrebare": "Ce mineral are o culoare rosiatica ?",
+        "optiuni": ["carbune", "ocru", "hematit", "quartz"],
+        "raspunsCorect": "ocru"
+    },
+    {
+        "intrebare": "Pentru decorarea templelor si a mormintelor egiptenii au inventat ..... egiptean",
+        "optiuni": ["albastru", "rosul", "verdele", "galbenul"],
+        "raspunsCorect": "albastru"
+    },
+    {
+        "intrebare": "In Roma si Grecia Antica culoarea regalitatii este ?",
+        "optiuni": ["galben", "albastru", "rosu", "mov"],
+        "raspunsCorect": "mov"
+    },
+    {
+        "intrebare": "In ce epoca utilizarea pigmentilor a fost in concordanta cu religia",
+        "optiuni": ["Evul Mediu", "Antichitate", "Epoca Moderna", "Preistoria"],
+        "raspunsCorect": "Evul Mediu"
+    },
+    {
+        "intrebare": "Care dintre urmatorii artisti NU este renascentist ?",
+        "optiuni": ["Vincent van Gogh", "Rafael", "Michelangelo", "Tiziano"],
+        "raspunsCorect": "Vincent van Gogh"
+    }
+]
