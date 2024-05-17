@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const RoataDublaComplementara = () => {
-  const culori = [
-    "red",
-    "blue",
-    "green",
-    "orange"
-];
-
-
+  const culori = ["red", "blue", "green", "orange"];
 
   const [indiceCuloareSelectata, setIndiceCuloareSelectata] = useState(null);
 
@@ -20,7 +13,7 @@ const RoataDublaComplementara = () => {
     let rad = (unghi * Math.PI) / 180;
     return {
       x: centruX + raza * Math.cos(rad),
-      y: centruY + raza * Math.sin(rad)
+      y: centruY + raza * Math.sin(rad),
     };
   };
 
@@ -36,20 +29,25 @@ const RoataDublaComplementara = () => {
     return `M${centruX},${centruY} L${start.x},${start.y} A${raza},${raza} 0 ${arcMare},1 ${end.x},${end.y} Z`;
   };
 
-  const gestioneazaClick = index => {
+  const gestioneazaClick = (index) => {
     setIndiceCuloareSelectata(index);
   };
 
   const obtineCuloareUmplere = (index) => {
     if (indiceCuloareSelectata === null) return culori[index];
     const numarTotalCulori = culori.length;
-    const complement1 = (indiceCuloareSelectata + 1) % numarTotalCulori;  // Adiacent direct
-    const complement2 = (indiceCuloareSelectata + numarTotalCulori / 2) % numarTotalCulori;  // Opus direct
-    const complement3 = (complement2 + 1) % numarTotalCulori;  // Adiacent opusului
-    if ([indiceCuloareSelectata, complement1, complement2, complement3].includes(index)) {
+    const complement1 = (indiceCuloareSelectata + 1) % numarTotalCulori; // Adiacent direct
+    const complement2 =
+      (indiceCuloareSelectata + numarTotalCulori / 2) % numarTotalCulori; // Opus direct
+    const complement3 = (complement2 + 1) % numarTotalCulori; // Adiacent opusului
+    if (
+      [indiceCuloareSelectata, complement1, complement2, complement3].includes(
+        index
+      )
+    ) {
       return culori[index];
     }
-    return 'grey';  // Restul culorilor sunt gri
+    return "grey"; // Restul culorilor sunt gri
   };
 
   return (
@@ -66,4 +64,4 @@ const RoataDublaComplementara = () => {
   );
 };
 
-export default RoataDublaComplementara
+export default RoataDublaComplementara;

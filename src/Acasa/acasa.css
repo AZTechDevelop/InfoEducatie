@@ -13,7 +13,7 @@
     text-indent:60px;
   }
 
-  /* Animații pentru fade-in cu diferite întârzieri */
+ 
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -24,7 +24,7 @@
     transform: translateY(0);
   }
 }
-/*
+
 .fade-in-delay-1, .fade-in-delay-2, .fade-in-delay-3,.fade-in-delay-4, .fade-in-delay-5,.fade-in-delay-6,.fade-in-delay-7,.fade-in-delay-8,
 .fade-in-delay-9, .fade-in-delay-10, .fade-in-delay-11, .fade-in-delay-12, .fade-in-delay-13
 {
@@ -87,4 +87,3 @@
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 7.0s; 
 }
-*/

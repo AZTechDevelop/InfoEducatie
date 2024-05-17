@@ -1,55 +1,56 @@
-import React, { useEffect, useState } from 'react';
-import './animatii'
+import { useEffect, useState } from "react";
+import "./animatii.css";
 
-function BubbleEffect() {
-  const [bubbles, setBubbles] = useState([]);
+function EfectBule() {
+  const [b, setB] = useState([]);
 
   useEffect(() => {
     const createBubble = () => {
       const size = Math.random() * (80 - 20) + 20;
       const duration = Math.random() * (10 - 5) + 5;
       const left = Math.random() * 100;
+      //dimensiunile bulei 
 
-      const newBubble = {
+      const newB = {
         id: new Date().getTime(),
         size,
         duration,
         left,
       };
+      //interfata bulei
 
-      setBubbles(currentBubbles => [...currentBubbles, newBubble]);
+      setB((currentBubbles) => [...currentBubbles, newB]);
 
-      // Setăm un timeout pentru a elimina bulele după ce acestea au "urcat"
       setTimeout(() => {
-        setBubbles(currentBubbles => 
-          currentBubbles.filter(bubble => bubble.id !== newBubble.id)
+        setB((currentBubbles) =>
+          currentBubbles.filter((bubble) => bubble.id !== newB.id)
         );
       }, duration * 500);
 
-      // Continuăm să adăugăm bule noi
-      setTimeout(createBubble, 1000); // Adăugăm o nouă bulă la fiecare secundă
+     
+      setTimeout(createBubble, 1000); 
+      //adauga o bula la fiecare secunda
     };
 
     createBubble();
 
     return () => {
-      // La demontarea componentei, curățăm toate timeout-urile active
-      setBubbles([]); // Resetăm array-ul de bule
+      setB([]); 
     };
   }, []);
 
   return (
     <div className="relative w-full h-full overflow-hidden">
-      {bubbles.map(bubble => (
+      {b.map((bule) => (
         <div
-          key={bubble.id}
+          key={bule.id}
           className="absolute bg-blue-500 rounded-full opacity-30"
           style={{
-            width: `${bubble.size}px`,
-            height: `${bubble.size}px`,
-            left: `${bubble.left}%`,
-            bottom: `-150px`, // Start off-screen
-            animation: `rise ${bubble.duration}s linear infinite`
+            width: `${bule.size}px`,
+            height: `${bule.size}px`,
+            left: `${bule.left}%`,
+            bottom: `-150px`, 
+            animation: `rise ${bule.duration}s linear infinite`,
           }}
         />
       ))}
@@ -57,4 +58,4 @@ function BubbleEffect() {
   );
 }
 
-export default BubbleEffect;
+export default EfectBule;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './quiz.css';
 import './bubbleWrap.css';
@@ -8,10 +8,8 @@ import Perceptia from './Perceptia.json';
 import Contrastul_in_Web_Design_si_Tehnologie from './ContrastulWeb.json';
 import Contrastul_in_arta from './ContrastulArta.json';
 import Durabilitatea from './Durabilitatea.json';
-import Lectie_1 from './1.json';
-import Lectie_2 from './2.json';
-import Lectie_3 from './3.json';
-import Lectie_4 from './4.json';
+import Psihologia from './Psihologia.json'
+
 import Cerc from '../imagini/Cerc.png'; // Import imaginea
 
 export default function Quiz() {
@@ -21,26 +19,24 @@ export default function Quiz() {
         Contrastul_in_Web_Design_si_Tehnologie,
         Contrastul_in_arta,
         Durabilitatea,
-        Lectie_1,
-        Lectie_2,
-        Lectie_3,
-        Lectie_4
+        Psihologia
     };
 
-    const [clickedBubbles, setClickedBubbles] = useState([]);
+   // const [clickedBubbles, setClickedBubbles] = useState([]);
 
     useEffect(() => {
         const rows = 15;
         const cols = 20;
         const bubbleCount = rows * cols;
-        setClickedBubbles(Array(bubbleCount).fill(false));
+     //   setClickedBubbles(Array(bubbleCount).fill(false));
     }, []);
-
+    /*
     const handleBubbleClick = (index) => {
         const newClickedBubbles = [...clickedBubbles];
         newClickedBubbles[index] = !newClickedBubbles[index];
         setClickedBubbles(newClickedBubbles);
     };
+    */
 
     return (
         <div>
@@ -64,6 +60,7 @@ export default function Quiz() {
                     ))}
                 </Routes>
             </div>
+            {/* 
             <div className="bubble-wrap">
                 {clickedBubbles.map((clicked, index) => (
                     <div
@@ -73,6 +70,7 @@ export default function Quiz() {
                     ></div>
                 ))}
             </div>
+            */}
         </div>
     );
 }

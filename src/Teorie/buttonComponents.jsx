@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function ButtonsComponent({ currentButton }) {
@@ -28,11 +27,11 @@ function ButtonsComponent({ currentButton }) {
         } else if (buttonNumber === 4) {
             navigate('/teorie/psihologia');
         }
-        else if(buttonNumber === 5){
-            navigate('/teorie/armonia')
-        }
         else if(buttonNumber === 6){
-            navigate('/teorie/constrastulsibalanta')
+            navigate('/teorie/contrastul-in-arta')
+        }
+        else if(buttonNumber === 5){
+            navigate('/teorie/contrastul-in-web-design')
         }
         else if(buttonNumber === 7){
         navigate('/teorie/durabilitatea')

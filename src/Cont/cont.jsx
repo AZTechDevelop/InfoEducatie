@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import Joi from 'joi';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +10,7 @@ const Cont = () => {
         email: '',
         password: '',
         confirmPassword: '',
-        action: 'register',  // 'register' sau 'login'
+        action: 'register',  
     });
     const [errors, setErrors] = useState({});
     const [message, setMessage] = useState('');

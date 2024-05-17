@@ -11,15 +11,7 @@ function Joc() {
     const [pickedColor, setPickedColor] = useState("");
     const [bestScore, setBestScore] = useState(0);
     const [difficulty, setDifficulty] = useState(4);
-    const [isMenuVisible, setIsMenuVisible] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuVisible(!isMenuVisible);
-    };
-
-    useEffect(() => {
-        reset();
-    }, [numSquares]); 
+   
 
     useEffect(() => {
         resetGame();

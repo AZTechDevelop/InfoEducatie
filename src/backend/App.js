@@ -15,8 +15,8 @@ import Introducere from '../Teorie/Introducere';
 import Istoria from '../Teorie/Istoria';
 import Psihologia from '../Teorie/Psihologia'
 import Perceptia from '../Teorie/Perceptia'
-import Armonia from '../Teorie/ContrastulWebDesign'
-import ContrastulSiBalanta from '../Teorie/ContrastulInArta';
+import ContrastulInWebDesign from '../Teorie/ContrastulWebDesign'
+import ContrastulInArta from '../Teorie/ContrastulInArta';
 import DurabilitateaCulorilor from '../Teorie/Durabilitatea';
 import Sustenabilitatea from '../Teorie/Sustenabilitatea';
 import Sistemele from '../Teorie/Sistemele'
@@ -51,8 +51,8 @@ function App() {
         <Route path="/teorie/perceptia" element={<Perceptia />} />
         <Route path="/teorie/psihologia" element={<Psihologia />} />
         <Route path="/teorie/psihologie" element={<Perceptia />} />
-        <Route path="/teorie/armonia" element={<Armonia />} />
-        <Route path="/teorie/constrastulsibalanta" element={<ContrastulSiBalanta />} />
+        <Route path="/teorie/contrastul-in-web-design" element={<ContrastulInWebDesign />} />
+        <Route path="/teorie/contrastul-in-arta" element={<ContrastulInArta />} />
         <Route path="/teorie/durabilitatea" element={<DurabilitateaCulorilor />} />
         <Route path="/teorie/sustenabilitatea" element={<Sustenabilitatea />} />
         <Route path="/teorie/sistemele" element={<Sistemele />} />

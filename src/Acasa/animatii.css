@@ -1,14 +1,12 @@
 
 @keyframes rise {
   from {
-    transform: translateY(0vh); /* pornirea de josul ecranului */
+    transform: translateY(0vh); 
   }
   to {
-    transform: translateY(-200vh); /* deplasarea până la partea de sus, ieșind din ecran */
+    transform: translateY(-200vh); 
   }
 }
-
-
 
 
 

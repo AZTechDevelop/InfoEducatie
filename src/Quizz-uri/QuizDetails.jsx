@@ -1,14 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import Istoria from './Istoria.json';
-import Perceptia from './Perceptia.json';
-import Contrastul_in_Web_Design_si_Tehnologie from './ContrastulWeb.json';
-import Contrastul_in_arta from './ContrastulArta.json';
-import Durabilitatea from './Durabilitatea.json';
-import Lectie_1 from './1.json';
-import Lectie_2 from './2.json';
-import Lectie_3 from './3.json';
-import Lectie_4 from './4.json';
 
 function QuizDetails({ quizData, nr }) {
     const [intrebareCurenta, setIntrebareCurenta] = useState(0);
