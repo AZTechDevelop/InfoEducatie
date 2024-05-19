@@ -9,7 +9,7 @@ function MixerCuloareRGBA() {
 
   return (
     <>
-      <h4 className="w-full my-3 md:w-2/6 ">Mixer de Culori RGBA</h4>
+      <h4 className="w-full my-3 md:w-2/6">Mixer de culori RGBA</h4>
       <div className="flex flex-wrap items-center justify-center p-5">
         <div className="w-full md:w-3/5 space-y-4 block">
           <div>
@@ -64,14 +64,14 @@ function MixerCuloareRGBA() {
         </div>
 
         <div
-          className="m-auto  md:mt-0 md:ml-4 bg-gray-800 w-32 h-32 flex items-center justify-center rounded-lg shadow-md align-center"
+          className="m-auto md:mt-0 md:ml-4 w-32 h-32 flex items-center justify-center rounded-lg shadow-md"
           style={{
             backgroundColor: `rgba(${rosu}, ${verde}, ${albastru}, ${alfa})`,
           }}
         >
-          <span className="text-white text-center text-sm">
+          <div className="text-white text-center text-sm">
             Culoarea Rezultată
-          </span>
+          </div>
         </div>
       </div>
     </>

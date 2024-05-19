@@ -72,46 +72,35 @@ export default function Sistemele() {
             culorii) și 255 (prezența completă a culorii), ceea ce oferă
             posibilitatea de a reprezenta până la 16,777,216 de culori diferite.
           </p>
-          <h4 className="w-full md:w-2/6 mt-4">Mixer de Culori RGB</h4>
-          <div className=" flex w-full items-center h-auto">
-            <div className="w-3/5">
-              <p>Toate culorile vor lua valoarea 255 (cea mai mare)</p>
-            </div>
-            <div className="flex justify-center items-center text-center w-2/5">
-              <select
-                onChange={handleColorChange}
-                className="form-select appearance-none flex w-auto px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              >
-                <option value="Alb">Alb</option>
-                <option value="roșu">Roșu</option>
-                <option value="verde">Verde</option>
-                <option value="albastru">Albastru</option>
-                <option value="roșu+verde">Roșu + Verde</option>
-                <option value="roșu+albastru">Roșu + Albastru</option>
-                <option value="verde+albastru">Verde + Albastru</option>
-                <option value="roșu+verde+albastru">
-                  Roșu + Verde + Albastru
-                </option>
-              </select>
+          <h4 className="w-full md:w-2/6 mt-4">Mixer de culori RGB</h4>
+          <div className="flex w-full items-center h-auto">
+  <div className="w-3/5">
+    <p>Toate culorile vor lua valoarea 255 (cea mai mare)</p>
+  </div>
+  <div className="flex mb-10 flex-col justify-center items-center text-center w-2/5">
+    <select
+      onChange={handleColorChange}
+      className="form-select appearance-none w-auto px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+    >
+      <option value="Alb">Alb</option>
+      <option value="roșu">Roșu</option>
+      <option value="verde">Verde</option>
+      <option value="albastru">Albastru</option>
+      <option value="roșu+verde">Roșu + Verde</option>
+      <option value="roșu+albastru">Roșu + Albastru</option>
+      <option value="verde+albastru">Verde + Albastru</option>
+      <option value="roșu+verde+albastru">Roșu + Verde + Albastru</option>
+    </select>
 
-              <div
-                style={{
-                  marginTop: "20px",
-                  marginLeft: "50px",
-                  width: "100px",
-                  height: "100px",
-                  backgroundColor: color,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "white",
-                  textAlign: "center",
-                }}
-              >
-                Culoarea Rezultată
-              </div>
-            </div>
-          </div>
+    <div
+      className="m-auto w-24 h-24 flex items-center justify-center text-white text-center"
+      style={{ backgroundColor: color }}
+    >
+      Culoarea Rezultată
+    </div>
+  </div>
+</div>
+
 
           <h2>RGBA (Red, Green, Blue, Alpha)</h2>
           <p>

@@ -1,27 +1,102 @@
 [
     {
-        "intrebare": "Ce mineral are o culoare rosiatica ?",
-        "optiuni": ["carbune", "ocru", "hematit", "quartz"],
-        "raspunsCorect": "ocru"
+        "intrebare": "Ce sunt culorile naturale?",
+        "optiuni": [
+            "Pigmenți obținuți din surse naturale precum plantele, mineralele sau animalele",
+            "Pigmenți creați artificial în laborator",
+            "Pigmenți care își schimbă culoarea în funcție de lumină",
+            "Pigmenți folosiți doar în industrie"
+        ],
+        "raspunsCorect": "Pigmenți obținuți din surse naturale precum plantele, mineralele sau animalele"
     },
     {
-        "intrebare": "Pentru decorarea templelor si a mormintelor egiptenii au inventat ..... egiptean",
-        "optiuni": ["albastru", "rosul", "verdele", "galbenul"],
-        "raspunsCorect": "albastru"
+        "intrebare": "Ce factor poate afecta durabilitatea culorilor naturale expuse la lumina solară?",
+        "optiuni": [
+            "pH-ul",
+            "Oxidarea",
+            "Sensibilitatea la lumină UV",
+            "Stabilitatea termică"
+        ],
+        "raspunsCorect": "Sensibilitatea la lumină UV"
     },
     {
-        "intrebare": "In Roma si Grecia Antica culoarea regalitatii este ?",
-        "optiuni": ["galben", "albastru", "rosu", "mov"],
-        "raspunsCorect": "mov"
+        "intrebare": "Care este un exemplu de pigment natural sensibil la lumină UV?",
+        "optiuni": [
+            "Curcuma",
+            "Antocianii din sfecla roșie",
+            "Ocru",
+            "Carbune"
+        ],
+        "raspunsCorect": "Antocianii din sfecla roșie"
     },
     {
-        "intrebare": "In ce epoca utilizarea pigmentilor a fost in concordanta cu religia",
-        "optiuni": ["Evul Mediu", "Antichitate", "Epoca Moderna", "Preistoria"],
-        "raspunsCorect": "Evul Mediu"
+        "intrebare": "Ce efect poate avea căldura asupra pigmentilor naturali?",
+        "optiuni": [
+            "Poate îmbunătăți intensitatea culorii",
+            "Poate degrada pigmentul",
+            "Nu are niciun efect",
+            "Poate schimba culoarea la alb"
+        ],
+        "raspunsCorect": "Poate degrada pigmentul"
     },
     {
-        "intrebare": "Care dintre urmatorii artisti NU este renascentist ?",
-        "optiuni": ["Vincent van Gogh", "Rafael", "Michelangelo", "Tiziano"],
-        "raspunsCorect": "Vincent van Gogh"
+        "intrebare": "Ce pigment natural se degradează rapid la căldură?",
+        "optiuni": [
+            "Paprika",
+            "Clorofila",
+            "Cochineal",
+            "Spirulina"
+        ],
+        "raspunsCorect": "Clorofila"
+    },
+    {
+        "intrebare": "Cum poate pH-ul influența durabilitatea culorilor naturale?",
+        "optiuni": [
+            "Poate face culoarea mai intensă",
+            "Poate schimba radical culoarea unui pigment",
+            "Nu influențează durabilitatea",
+            "Poate preveni oxidarea"
+        ],
+        "raspunsCorect": "Poate schimba radical culoarea unui pigment"
+    },
+    {
+        "intrebare": "Ce se întâmplă cu pigmentul roșu din varza roșie în medii acide?",
+        "optiuni": [
+            "Devine verde",
+            "Devine albastru",
+            "Devine roz",
+            "Devine galben"
+        ],
+        "raspunsCorect": "Devine roz"
+    },
+    {
+        "intrebare": "Ce este oxidarea și cum afectează culorile naturale?",
+        "optiuni": [
+            "Este un proces de întunecare a culorii",
+            "Este un proces chimic care poate cauza modificarea structurii moleculare a pigmentilor",
+            "Este un proces de neutralizare a culorilor",
+            "Este un proces de îmbunătățire a durabilității"
+        ],
+        "raspunsCorect": "Este un proces chimic care poate cauza modificarea structurii moleculare a pigmentilor"
+    },
+    {
+        "intrebare": "De ce sunt preferate culorile naturale în multe aplicații?",
+        "optiuni": [
+            "Pentru că sunt mai ieftine",
+            "Datorită percepției că sunt mai sigure și mai sănătoase",
+            "Pentru că sunt mai intense",
+            "Pentru că sunt mai ușor de produs"
+        ],
+        "raspunsCorect": "Datorită percepției că sunt mai sigure și mai sănătoase"
+    },
+    {
+        "intrebare": "Ce tehnici pot fi folosite pentru a îmbunătăți durabilitatea pigmentilor naturali?",
+        "optiuni": [
+            "Microencapsularea sau adăugarea de antioxidanți",
+            "Exponerea la lumina solară",
+            "Amestecarea cu apă",
+            "Utilizarea la temperaturi înalte"
+        ],
+        "raspunsCorect": "Microencapsularea sau adăugarea de antioxidanți"
     }
 ]

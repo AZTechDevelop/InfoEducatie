@@ -1,27 +1,102 @@
 [
     {
-        "intrebare": "Ce mineral are o culoare rosiatica ?",
-        "optiuni": ["carbune", "ocru", "hematit", "quartz"],
-        "raspunsCorect": "ocru"
+        "intrebare": "Care este una dintre preocupările principale legate de industria culorilor?",
+        "optiuni": [
+            "Impactul asupra economiei",
+            "Impactul asupra mediului",
+            "Lipsa de inovație",
+            "Costurile ridicate de producție"
+        ],
+        "raspunsCorect": "Impactul asupra mediului"
     },
     {
-        "intrebare": "Pentru decorarea templelor si a mormintelor egiptenii au inventat ..... egiptean",
-        "optiuni": ["albastru", "rosul", "verdele", "galbenul"],
-        "raspunsCorect": "albastru"
+        "intrebare": "Ce efect negativ poate avea producția tradițională de pigmenți asupra apei?",
+        "optiuni": [
+            "Creșterea biodiversității",
+            "Poluarea cu metale grele și substanțe toxice",
+            "Încălzirea globală",
+            "Degradarea calității aerului"
+        ],
+        "raspunsCorect": "Poluarea cu metale grele și substanțe toxice"
     },
     {
-        "intrebare": "In Roma si Grecia Antica culoarea regalitatii este ?",
-        "optiuni": ["galben", "albastru", "rosu", "mov"],
-        "raspunsCorect": "mov"
+        "intrebare": "Ce sunt VOCs și cum contribuie la poluare?",
+        "optiuni": [
+            "Substanțe volatile organice care contribuie la poluarea aerului",
+            "Pigmenți neutilizați care contribuie la poluarea solului",
+            "Deșeuri lichide care poluează apa",
+            "Reziduuri solide care nu sunt reciclate"
+        ],
+        "raspunsCorect": "Substanțe volatile organice care contribuie la poluarea aerului"
     },
     {
-        "intrebare": "In ce epoca utilizarea pigmentilor a fost in concordanta cu religia",
-        "optiuni": ["Evul Mediu", "Antichitate", "Epoca Moderna", "Preistoria"],
-        "raspunsCorect": "Evul Mediu"
+        "intrebare": "Care este un exemplu de pigment pe bază de biologie?",
+        "optiuni": [
+            "Pigmenți pe bază de metale grele",
+            "Pigmenți sintetici",
+            "Pigmenți extrași din plante și microorganisme",
+            "Pigmenți pe bază de solvenți organici"
+        ],
+        "raspunsCorect": "Pigmenți extrași din plante și microorganisme"
     },
     {
-        "intrebare": "Care dintre urmatorii artisti NU este renascentist ?",
-        "optiuni": ["Vincent van Gogh", "Rafael", "Michelangelo", "Tiziano"],
-        "raspunsCorect": "Vincent van Gogh"
+        "intrebare": "Cum poate utilizarea apei ca solvent în locul solvenților organici ajuta mediul?",
+        "optiuni": [
+            "Crește emisiile de VOCs",
+            "Reduce emisiile de VOCs",
+            "Crește consumul de energie",
+            "Nu are niciun efect asupra mediului"
+        ],
+        "raspunsCorect": "Reduce emisiile de VOCs"
+    },
+    {
+        "intrebare": "Ce beneficiu aduce reciclarea și reutilizarea pigmenților din deșeuri industriale?",
+        "optiuni": [
+            "Crește producția de noi materiale",
+            "Minimizează cantitatea de deșeuri",
+            "Crește poluarea aerului",
+            "Reduce costurile de producție"
+        ],
+        "raspunsCorect": "Minimizează cantitatea de deșeuri"
+    },
+    {
+        "intrebare": "Ce certificare ecologică încurajează practici sustenabile în producția de pigmenți și vopsele?",
+        "optiuni": [
+            "ISO 9001",
+            "EcoLabel",
+            "Energy Star",
+            "FSC Certification"
+        ],
+        "raspunsCorect": "EcoLabel"
+    },
+    {
+        "intrebare": "Cum pot practicile inovative reduce poluarea în producția de pigmenți?",
+        "optiuni": [
+            "Prin creșterea consumului de energie",
+            "Prin optimizarea proceselor pentru a reduce consumul de energie și materii prime",
+            "Prin utilizarea de solvenți mai toxici",
+            "Prin eliminarea reciclării"
+        ],
+        "raspunsCorect": "Prin optimizarea proceselor pentru a reduce consumul de energie și materii prime"
+    },
+    {
+        "intrebare": "Ce sistem avansat poate ajuta la reducerea contaminanților din apa folosită în producția de pigmenți?",
+        "optiuni": [
+            "Sisteme avansate de purificare a aerului",
+            "Sisteme avansate de purificare a apei",
+            "Sisteme de reciclare a deșeurilor solide",
+            "Sisteme de reducere a emisiilor de VOCs"
+        ],
+        "raspunsCorect": "Sisteme avansate de purificare a apei"
+    },
+    {
+        "intrebare": "De ce este importantă educația populației în privința practicilor sustenabile?",
+        "optiuni": [
+            "Pentru a crește producția industrială",
+            "Pentru a încuraja o adopție mai largă a metodelor sustenabile",
+            "Pentru a reduce costurile de producție",
+            "Pentru a crește poluarea"
+        ],
+        "raspunsCorect": "Pentru a încuraja o adopție mai largă a metodelor sustenabile"
     }
 ]

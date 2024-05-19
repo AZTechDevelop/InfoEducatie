@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
+
 function QuizDetails({ quizData, nr }) {
     const [intrebareCurenta, setIntrebareCurenta] = useState(0);
     const [optiuniSelectate, setOptiuniSelectate] = useState([]);

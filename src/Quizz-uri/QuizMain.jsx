@@ -9,6 +9,7 @@ import Durabilitatea from './Durabilitatea.json';
 import Psihologia from './Psihologia.json'
 import Sustenabilitatea from './Sustenabilitatea.json'
 import Sistemele from './Sistemele.json'
+import './quiz.css'
 
 const quizzes = {
     istoria: Istoria,
@@ -32,7 +33,7 @@ function QMain() {
     return (
         <div className='mt-5'>
             <h1>Quiz  {quizType.replace(/_/g, ' ')}</h1>
-            <QuizDetails quizData={quizData} />
+            <QuizDetails quizData={quizData} className="btn" />
             
 
         </div>

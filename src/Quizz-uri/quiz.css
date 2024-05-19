@@ -1,9 +1,9 @@
-.btn1{
-    @apply truncate bg-gray-600 px-5 py-3 w-1/5 h-16 text-4xl rounded-lg text-white hover:bg-gray-800 duration-500 lg:text-3xl sm:text-xl md:text-xs;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
+.btn1 {
+    @apply h-auto bg-gray-600 px-5 py-3 w-1/5 h-16 text-4xl rounded-lg text-black hover:bg-gray-800 duration-500 lg:text-xl sm:text-sm md:text-xl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
