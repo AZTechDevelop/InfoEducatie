@@ -1,27 +1,62 @@
 [
     {
-        "intrebare": "Ce mineral are o culoare rosiatica ?",
-        "optiuni": ["carbune", "ocru", "hematit", "quartz"],
-        "raspunsCorect": "ocru"
+      "intrebare": "Care este culoarea considerată primară în sistemul aditiv de culoare?",
+      "optiuni": ["Roșu", "Verde", "Albastru", "Galben"],
+      "raspunsCorect": "Albastru"
     },
     {
-        "intrebare": "Pentru decorarea templelor si a mormintelor egiptenii au inventat ..... egiptean",
-        "optiuni": ["albastru", "rosul", "verdele", "galbenul"],
-        "raspunsCorect": "albastru"
+      "intrebare": "Care este culoarea complementară a roșului?",
+      "optiuni": ["Verde", "Albastru", "Galben", "Cyan"],
+      "raspunsCorect": "Cyan"
     },
     {
-        "intrebare": "In Roma si Grecia Antica culoarea regalitatii este ?",
-        "optiuni": ["galben", "albastru", "rosu", "mov"],
-        "raspunsCorect": "mov"
+      "intrebare": "Cum se obține culoarea violet în sistemul aditiv de culoare?",
+      "optiuni": ["Roșu + Verde", "Roșu + Albastru", "Verde + Albastru", "Galben + Albastru"],
+      "raspunsCorect": "Roșu + Albastru"
     },
     {
-        "intrebare": "In ce epoca utilizarea pigmentilor a fost in concordanta cu religia",
-        "optiuni": ["Evul Mediu", "Antichitate", "Epoca Moderna", "Preistoria"],
-        "raspunsCorect": "Evul Mediu"
+      "intrebare": "Ce reprezintă o schemă de culori analoge?",
+      "optiuni": ["Folosește tonuri și umbre ale aceleiași culori", "Folosește culori situate la distanță egale pe roata culorilor", "Folosește culori opuse pe roata culorilor", "Folosește culori la distanțe egale pe roata culorilor"],
+      "raspunsCorect": "Folosește culori situate la distanță egale pe roata culorilor"
     },
     {
-        "intrebare": "Care dintre urmatorii artisti NU este renascentist ?",
-        "optiuni": ["Vincent van Gogh", "Rafael", "Michelangelo", "Tiziano"],
-        "raspunsCorect": "Vincent van Gogh"
+      "intrebare": "Care este caracteristica unei scheme de culori complementare?",
+      "optiuni": ["Combină culori situate direct opus pe roata culorilor", "Combină culori adiacente pe roata culorilor", "Combină culori la distanțe egale pe roata culorilor", "Combină culori opuse pe roata culorilor"],
+      "raspunsCorect": "Combină culori situate direct opus pe roata culorilor"
+    },
+    {
+      "intrebare": "Care este culoarea complementară a verde-închis?",
+      "optiuni": ["Roșu", "Albastru", "Galben", "Portocaliu"],
+      "raspunsCorect": "Roșu"
+    },
+    {
+      "intrebare": "Ce culoare se obține prin amestecul de roșu și verde?",
+      "optiuni": ["Galben", "Cyan", "Violet", "Portocaliu"],
+      "raspunsCorect": "Galben"
+    },
+    {
+      "intrebare": "Care este culoarea complementară a albastrului închis?",
+      "optiuni": ["Roșu", "Verde", "Galben", "Portocaliu"],
+      "raspunsCorect": "Portocaliu"
+    },
+    {
+      "intrebare": "Cum se obține culoarea cyan în sistemul aditiv de culoare?",
+      "optiuni": ["Roșu + Verde", "Roșu + Albastru", "Verde + Albastru", "Galben + Albastru"],
+      "raspunsCorect": "Verde + Albastru"
+    },
+    {
+      "intrebare": "Care este culoarea primară în sistemul aditiv de culoare?",
+      "optiuni": ["Roșu", "Verde", "Albastru", "Galben"],
+      "raspunsCorect": "Albastru"
+    },
+    {
+      "intrebare": "Ce reprezintă o schemă de culori triadice?",
+      "optiuni": ["Alege două culori care sunt separate de o altă culoare pe roata culorilor", "Alege trei culori care sunt la distanțe egale pe roata culorilor", "Alege patru culori care sunt echidistante pe roata culorilor", "Alege culori situate la distanțe egale de o culoare principală"],
+      "raspunsCorect": "Alege trei culori care sunt la distanțe egale pe roata culorilor"
+    },
+    {
+      "intrebare": "Care este culoarea complementară a galbenului?",
+      "optiuni": ["Roșu", "Verde", "Albastru", "Violet"],
+      "raspunsCorect": "Violet"
     }
-]
+  ]

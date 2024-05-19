@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "./quiz.css";
-import "./bubbleWrap.css";
 import QuizDetails from "./QuizDetails";
 import Istoria from "./Istoria.json";
 import Perceptia from "./Perceptia.json";
@@ -11,8 +9,8 @@ import Durabilitatea from "./Durabilitatea.json";
 import Psihologia from "./Psihologia.json";
 import Sustenabilitatea from "./Sustenabilitatea.json";
 import Sistemele from "./Sistemele.json";
-
-
+import EfectBule from "../Acasa/buble";
+import '../Acasa/animatii.css'
 export default function Quiz() {
   const quizzes = {
     Istoria,
@@ -30,7 +28,11 @@ export default function Quiz() {
 
   return (
   
-<div>
+<div >
+<div className="relative w-full h-screen overflow-hidden">
+      <div className="absolute w-full h-full z-0">
+    <EfectBule />
+    </div>
   <div className="container w-full mx-auto p-4">
     <div className="flex flex-wrap justify-center items-center gap-4 w-full">
       {Object.keys(quizzes).map((quizName, index) => (
@@ -60,7 +62,7 @@ export default function Quiz() {
           ))}
         </Routes>
       </div>
-      
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function RoataCulorilorSplitComplementary() {
   const [segmentSelectat, setSegmentSelectat] = useState(null);
 
-  // Definirea grupurilor de culori: principală + cele două adiacente
+  
   const culori = [
     "rgb(255, 69, 0)", // redOrange
     "rgb(255, 0, 0)", // red

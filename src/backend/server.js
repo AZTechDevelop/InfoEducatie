@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
-// Modelul pentru utilizatori
+// Modelul pentru USER
 const UserSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   email: { type: String, required: true, unique: true },
@@ -24,8 +24,8 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', UserSchema);
 
-// Endpoint pentru înregistrarea utilizatorilor
-app.post('/api/register', async (req, res) => {
+
+app.post('/register', async (req, res) => {
     const { username, email, password } = req.body;
 
     if (!username || !email || !password) {
@@ -47,8 +47,8 @@ app.post('/api/register', async (req, res) => {
     }
 });
 
-// Endpoint pentru login
-app.post('/api/login', async (req, res) => {
+
+app.post('/login', async (req, res) => {
     const { email, password } = req.body;
 
     try {
@@ -68,7 +68,6 @@ app.post('/api/login', async (req, res) => {
     }
 });
 
-// Middleware pentru servirea fișierelor statice din React build
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Toate rutele nehandle-uite de API sunt trimise către index.html pentru a permite React Router să le gestioneze
@@ -76,7 +75,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
-// Ascultarea pe un port specific
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
