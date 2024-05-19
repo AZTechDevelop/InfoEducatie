@@ -16,10 +16,11 @@ export default function Quiz() {
     const quizzes = {
         Istoria,
         Perceptia,
+        Psihologia,
         Contrastul_in_Web_Design_si_Tehnologie,
         Contrastul_in_arta,
-        Durabilitatea,
-        Psihologia
+        Durabilitatea
+        
     };
 
    // const [clickedBubbles, setClickedBubbles] = useState([]);

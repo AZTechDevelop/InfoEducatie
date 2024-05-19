@@ -5,88 +5,88 @@ import { useNavigate } from 'react-router-dom';
 
 const Cont = () => {
     const navigate = useNavigate();
-    const [formData, setFormData] = useState({
-        username: '',
+    const [dateFormular, setDateFormular] = useState({
+        utilizator: '',
         email: '',
-        password: '',
-        confirmPassword: '',
-        action: 'register',  
+        parola: '',
+        confirmaParola: '',
+        actiune: 'inregistrare',  
     });
-    const [errors, setErrors] = useState({});
-    const [message, setMessage] = useState('');
+    const [erori, setErori] = useState({});
+    const [mesaj, setMesaj] = useState('');
 
     const schema = Joi.object({
-        username: Joi.string().alphanum().min(3).max(30).when('action', { is: 'register', then: Joi.required() }).label('Username'),
+        utilizator: Joi.string().alphanum().min(3).max(30).when('actiune', { is: 'inregistrare', then: Joi.required() }).label('Utilizator'),
         email: Joi.string().email({ tlds: { allow: false } }).required().label('Email'),
-        password: Joi.string().min(8).required().label('Password'),
-        confirmPassword: Joi.string().valid(Joi.ref('password')).when('action', { is: 'register', then: Joi.required() }).messages({
-            'any.only': 'Passwords do not match',
+        parola: Joi.string().min(8).required().label('Parola'),
+        confirmaParola: Joi.string().valid(Joi.ref('parola')).when('actiune', { is: 'inregistrare', then: Joi.required() }).messages({
+            'any.only': 'Parolele nu se potrivesc',
         }),
     });
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
+    const gestioneazaSchimbare = (e) => {
+        setDateFormular({
+            ...dateFormular,
             [e.target.name]: e.target.value,
         });
     };
 
-    const handleSubmit = async (e) => {
+    const gestioneazaSubmit = async (e) => {
         e.preventDefault();
-        const { error } = schema.validate(formData, { abortEarly: false });
+        const { error } = schema.validate(dateFormular, { abortEarly: false });
         if (error) {
-            const validationErrors = {};
+            const eroriValidare = {};
             error.details.forEach((detail) => {
-                validationErrors[detail.path[0]] = detail.message;
+                eroriValidare[detail.path[0]] = detail.message;
             });
-            setErrors(validationErrors);
+            setErori(eroriValidare);
             return;
         }
 
-        const baseUrl = `http://localhost:3001/api/${formData.action}`;
+        const bazaUrl = `http://localhost:3001/api/${dateFormular.actiune}`;
         try {
-            const response = await axios.post(baseUrl, formData);
-            setMessage(response.data.message);
-            if (response.data.success) {
-                if (formData.action === 'login') {
-                    navigate('/logged-in', { state: { ...formData, username: response.data.username } });
+            const raspuns = await axios.post(bazaUrl, dateFormular);
+            setMesaj(raspuns.data.mesaj);
+            if (raspuns.data.succes) {
+                if (dateFormular.actiune === 'login') {
+                    navigate('/logged-in', { state: { ...dateFormular, utilizator: raspuns.data.utilizator } });
                 }
             }
         } catch (error) {
-            setMessage(error.response?.data?.message || 'An error occurred during login or registration');
+            setMesaj(error.response?.data?.mesaj || 'A apărut o eroare în timpul autentificării sau înregistrării');
         }
     };
 
     return (
         <div className="container mx-auto p-4">
-            <h1 className="text-2xl font-bold mb-4">{formData.action === 'login' ? 'Log In' : 'Create a New Account'}</h1>
-            <form onSubmit={handleSubmit} action="/api/register" method="post">
+            <h1 className="font-bold  text-black mb-4">{dateFormular.actiune === 'login' ? 'Autentificare' : 'Creează un Cont Nou'}</h1>
+            <form onSubmit={gestioneazaSubmit} action="/api/register" method="post">
                 <div className="mb-4">
-                    <label htmlFor="action" className="block text-sm font-medium text-gray-700">Action</label>
+                    <label htmlFor="actiune" className="block text-sm font-medium text-gray-700">Acțiune</label>
                     <select
-                        id="action"
-                        name="action"
-                        value={formData.action}
-                        onChange={handleChange}
+                        id="actiune"
+                        name="actiune"
+                        value={dateFormular.actiune}
+                        onChange={gestioneazaSchimbare}
                         className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                     >
-                        <option value="register">Register</option>
-                        <option value="login">Log In</option>
+                        <option value="inregistrare">Înregistrare</option>
+                        <option value="login">Autentificare</option>
                     </select>
                 </div>
 
-                {formData.action === 'register' && (
+                {dateFormular.actiune === 'inregistrare' && (
                     <div className="mb-4">
-                        <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username</label>
+                        <label htmlFor="utilizator" className="block text-sm font-medium text-gray-700">Utilizator</label>
                         <input
                             type="text"
-                            id="username"
-                            name="username"
-                            value={formData.username}
-                            onChange={handleChange}
+                            id="utilizator"
+                            name="utilizator"
+                            value={dateFormular.utilizator}
+                            onChange={gestioneazaSchimbare}
                             className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                         />
-                        {errors.username && <p className="text-red-500 text-sm">{errors.username}</p>}
+                        {erori.utilizator && <p className="text-red-500 text-sm">{erori.utilizator}</p>}
                     </div>
                 )}
 
@@ -96,39 +96,40 @@ const Cont = () => {
                         type="email"
                         id="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                        value={dateFormular.email}
+                        onChange={gestioneazaSchimbare}
                         className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                     />
-                    {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+                    {erori.email && <p className="text-red-500 text-sm">{erori.email}</p>}
                 </div>
 
                 <div className="mb-4">
-                    <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+                    <label htmlFor="parola" className="block text-sm font-medium text-gray-700">Parola</label>
                     <input
                         type="password"
-                        id="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleChange}
+                        id="parola"
+                        name="parola"
+                        value={dateFormular.parola}
+                        onChange={gestioneazaSchimbare}
                         className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                     />
-                    {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
+                    {erori.parola && <p className="text-red-500 text-sm">{erori.parola}</p>}
                 </div>
 
-                {formData.action === 'register' && (                     <div className="mb-4">
-                        <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">
-                            Confirm Password
+                {dateFormular.actiune === 'inregistrare' && (                     
+                    <div className="mb-4">
+                        <label htmlFor="confirmaParola" className="block text-sm font-medium text-gray-700">
+                            Confirmă Parola
                         </label>
                         <input
                             type="password"
-                            id="confirmPassword"
-                            name="confirmPassword"
-                            value={formData.confirmPassword}
-                            onChange={handleChange}
+                            id="confirmaParola"
+                            name="confirmaParola"
+                            value={dateFormular.confirmaParola}
+                            onChange={gestioneazaSchimbare}
                             className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                         />
-                        {errors.confirmPassword && <p className="text-red-500 text-sm">{errors.confirmPassword}</p>}
+                        {erori.confirmaParola && <p className="text-red-500 text-sm">{erori.confirmaParola}</p>}
                     </div>
                 )}
 
@@ -136,14 +137,13 @@ const Cont = () => {
                     type="submit"
                     className="w-full bg-blue-500 text-white p-2 rounded-md"
                 >
-                    {formData.action === 'login' ? 'Log In' : 'Register'}
+                    {dateFormular.actiune === 'login' ? 'Autentificare' : 'Înregistrare'}
                 </button>
             </form>
 
-            {message && <p className="mt-4 text-green-500">{message}</p>}
+            {mesaj && <p className="mt-4 text-green-500">{mesaj}</p>}
         </div>
     );
 };
 
 export default Cont;
-

@@ -83,8 +83,8 @@ function CreatorPaleta() {
     };
 
     return (
-        
-        <div className="flex bg-gray-400" style={{height:'100vh'}}>
+        <div className="flex  pt-5" style={{ height: 'auto' , paddingTop:'100px'
+        }}>
             <div className="w-1/2 flex flex-col items-center justify-center" style={{ marginTop: '-100px' }}>
                 <div className="flex w-full items-center justify-center my-3 sticky rounded focus:outline-none focus:shadow-outline">
                     <input
@@ -97,23 +97,22 @@ function CreatorPaleta() {
                         Salvează Paleta
                     </button>
                 </div>
-                <SketchPicker color={culoareSelectata} onChangeComplete={schimbaCuloare} width="60%" height="50px" />
-                <div className='w-full h-auto relative items-center flex'>
+                <SketchPicker color={culoareSelectata} onChangeComplete={schimbaCuloare} width="50%" height="50" />
+                <div className="w-full relative items-center flex">
                     <button className="mt-4 ml-5 text-xl bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-2/5" onClick={adaugaCuloare}>
                         Adaugă Culoare
                     </button>
-                    <div className="w-full flex flex-wrap justify-center mt-2">
-                        {culori.map((culoare, index) => (
-                            <div key={index} className="m-1 w-16 h-16 flex justify-center items-center relative" style={{ backgroundColor: culoare }}>
-                                <button className="absolute inset-0 w-full h-full opacity-0" onClick={() => eliminaCuloare(culoare)}>Elimină</button>
-                                <span className="text-white text-4xl">X</span>
-                            </div>
-                        ))}
-                    </div>
+                </div>
+                <div className="w-full flex flex-wrap justify-center mt-2">
+                    {culori.map((culoare, index) => (
+                        <div key={index} className="m-1 w-16 h-16 flex justify-center items-center relative" style={{ backgroundColor: culoare }}>
+                            <button className="absolute inset-0 w-full h-full opacity-0" onClick={() => eliminaCuloare(culoare)}>Elimină</button>
+                        </div>
+                    ))}
                 </div>
             </div>
             <div className="w-1/2 flex flex-col items-center justify-start overflow-auto p-4 saved-palettes-container">
-                <p className="py-3 text-4xl text-purple-950 font-bold">Palete Salvate</p>
+                <p className="py-3 text-4xl text-black font-bold">Palete Salvate</p>
                 {palete.map((paleta, index) => (
                     <div key={index} className="flex flex-col items-center justify-between bg-gray-600 text-white py-2 px-3 rounded w-4/5 mb-2">
                         <div className="flex w-full justify-between">
@@ -146,3 +145,4 @@ function CreatorPaleta() {
 }
 
 export default CreatorPaleta;
+

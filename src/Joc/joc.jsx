@@ -87,8 +87,8 @@ function Joc() {
                 </div>
             )}
 
-            <div id="stripe0" className='w-full flex'>
-                <Effect className="w-2/5" />
+            <div id="stripe0" className='w-full flex lg:block'>
+                <Effect className="w-2/5 lg:flex block" />
                 <div className='w-3/5 flex justify-between'>
                     <button className={`mode bg-gray-600 mx-4 ${difficulty === 2 ? 'selected' : ''}`} onClick={() => changeDifficulty(2)}>Usor</button>
                     <button className={`mode bg-gray-600 mx-4 ${difficulty === 4 ? 'selected' : ''}`} onClick={() => changeDifficulty(4)}>Normal</button>
@@ -96,7 +96,8 @@ function Joc() {
                 </div>
             </div>
 
-            <div className="infoList">
+
+            <div className="infoList flex">
                 <label className="infoItem py-2" style={{color: 'rgb(239 68 68)'}}>Vieti: {score}</label>
                 <label className="infoItem py-2" style={{color: 'rgb(234 179 8)'}}>Scor Actual: {correctCounter}</label>
                 <label className="infoItem py-2" style={{color:'rgb(59 130 246)'}}>Cel Mai Bun Scor: {bestScore}</label>

@@ -32,7 +32,7 @@ function ArmoniaCulorilor() {
                     </p>
                     <li>
                       <strong>Culori Primare:</strong> Sunt culorile de bază din
-                      care se pot obține toate celelalte culori prin amestecare.{" "}
+                      care se pot obține toate celelalte culori prin amestecare (roșu, verde și albastru)
                     </li>
 
                     <li className="w-full">
@@ -43,26 +43,16 @@ function ArmoniaCulorilor() {
                     <li className="w-full">
                       <strong>Culori Terțiare:</strong> Rezultă din combinarea
                       unei culori primare cu una secundară adiacentă pe roata
-                      culorilor, cum ar fi roșu-portocaliu sau albastru-verde.
+                      culorilor, cum ar fi roșu+portocaliu sau albastru+verde.
                     </li>
                   </div>
                   <div className="w-2/5">
-                    {" "}
+                    
                     <RoataCulorilor />
                   </div>
                 </div>
               </ol>
-              <ol className="list-decimal list-inside">
-                <li>
-                  <strong>Culori Calde:</strong> Acestea includ culori precum
-                  roșu, portocaliu și galben, care evocă energie, pasiune și
-                  căldură.
-                </li>
-                <li>
-                  <strong>Culori Reci:</strong> Cuprind culori precum albastru,
-                  verde și violet, asociate cu calmul, relaxarea și serenitatea.
-                </li>
-              </ol>
+              
             </div>
           </div>
           <h2>Tipuri de Armonie a Culorilor</h2>

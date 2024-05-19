@@ -12,12 +12,12 @@ function ContrastTypes() {
         </div>
         <div className="w-5/6 p-4 flex flex-col bg-gray-100 mx-auto px-4 py-6">
           <div className="mx-auto px-4 py-6">
-          <h1>Contrastul in Arta</h1>
+          <h1>Contrastul in Artă</h1>
 
           <section>
             <div className="flex w-full justify-between">
               <div>
-                <h2>Culori în sistemul substractiv (pigmenți) . Arta</h2>
+                <h2>Culori în sistemul substractiv (pigmenți) . Artă</h2>
                 <p className="w-full">
                   În sistemul de culori substractiv (pigmenți), cum ar fi cel
                   utilizat în pictură și printare: Roșu (specific mai des ca
@@ -26,14 +26,14 @@ function ContrastTypes() {
                 </p>
                 <ol className="list-decimal list-inside">
                   <li className="w-full">
-                    <strong>Culori Primare:</strong> Magenta (roșu), Cyan
-                    (albastru), Galben. Acestea sunt culorile de bază din care
+                    <strong>Culori Primare:</strong> roșu, albastru
+                    și galben, acestea sunt culorile de bază din care
                     se pot obține toate celelalte culori prin amestecare.
                   </li>
                   <li className="w-full">
                     <strong>Culori Secundare:</strong> Obținute prin combinarea
-                    culorilor primare - portocaliu (magenta + galben), verde
-                    (cyan + galben), violet (magenta + cyan).
+                    culorilor primare: portocaliu (rosu + galben), verde
+                    (albastru + galben), violet (rosu + albastru).
                   </li>
                   <li>
                     <strong>Culori Terțiare:</strong> Rezultă din combinarea
@@ -48,6 +48,7 @@ function ContrastTypes() {
               </div>
             </div>
             <br />
+            <p>Culorile se mai pot clasifica și așa: </p>
             <ol className="list-decimal list-inside">
               <li>
                 <strong>Culori Calde:</strong> Roșu, portocaliu, galben, care
@@ -70,7 +71,7 @@ function ContrastTypes() {
             <li>
               <h2> Contrastul culorii în sine</h2>
               <p>
-                {" "}
+              
                 Acest contrast implică utilizarea a minim trei culori pure.
                 Impactul vizual este direct proporțional cu puritatea și
                 apropierea culorilor față de cele primare. Contrastul devine mai

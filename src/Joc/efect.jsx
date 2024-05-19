@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
-const gradients = [
+const gradiente = [
     'linear-gradient(45deg, red, yellow, red)',
     'linear-gradient(45deg, green, pink, green)',
     'linear-gradient(45deg, orange, purple, orange)',
@@ -24,27 +23,23 @@ const gradients = [
     'linear-gradient(45deg, midnightblue, skyblue, midnightblue)',
 ];
 
-
-function Effect() {
-  const [currentGradient, setCurrentGradient] = useState('');
+function Efect() {
+  const [grade, setGrade] = useState('');
  
   useEffect(() => {
-    const changeGradient = () => {
-      const randomIndex = Math.floor(Math.random() * gradients.length);
-      setCurrentGradient(gradients[randomIndex]);
+    const schimbaGradiente = () => {
+      const indexAleatoriu = Math.floor(Math.random() * gradiente.length);
+      setGrade(gradiente[indexAleatoriu]);
     };
 
-    const intervalId = setInterval(changeGradient, 1000);
-    return () => clearInterval(intervalId);
+    const idInterval = setInterval(schimbaGradiente, 1000);
+    return () => clearInterval(idInterval);
   }, []);
 
- 
 
   return (
-
-        <h1 className="title flex text-center" style={{ backgroundImage: currentGradient, width:'100%' }}>Ghiceste Culoarea</h1>
-  
+    <h1 className="title flex text-center" style={{ backgroundImage: grade, width: '100%' }}>Ghiceste Culoarea</h1>
   );
 }
 
-export default Effect;
+export default Efect;

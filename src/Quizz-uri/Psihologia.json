@@ -1,27 +1,47 @@
 [
     {
-        "intrebare": "Ce mineral are o culoare rosiatica ?",
-        "optiuni": ["carbune", "ocru", "hematit", "quartz"],
-        "raspunsCorect": "ocru"
+        "intrebare": "Ce culoare este asociată cu profesionalismul și încrederea?",
+        "optiuni": ["Albastru", "Portocaliu", "Negru", "Alb"],
+        "raspunsCorect": "Albastru"
     },
     {
-        "intrebare": "Pentru decorarea templelor si a mormintelor egiptenii au inventat ..... egiptean",
-        "optiuni": ["albastru", "rosul", "verdele", "galbenul"],
-        "raspunsCorect": "albastru"
+        "intrebare": "Ce culoare simbolizează luxul și calitatea?",
+        "optiuni": ["Gri", "Mov", "Verde", "Galben"],
+        "raspunsCorect": "Mov"
     },
     {
-        "intrebare": "In Roma si Grecia Antica culoarea regalitatii este ?",
-        "optiuni": ["galben", "albastru", "rosu", "mov"],
-        "raspunsCorect": "mov"
+        "intrebare": "Ce culoare evocă pasiune și energie?",
+        "optiuni": ["Verde", "Roșu", "Albastru", "Gri"],
+        "raspunsCorect": "Roșu"
     },
     {
-        "intrebare": "In ce epoca utilizarea pigmentilor a fost in concordanta cu religia",
-        "optiuni": ["Evul Mediu", "Antichitate", "Epoca Moderna", "Preistoria"],
-        "raspunsCorect": "Evul Mediu"
+        "intrebare": "Care culoare este asociată cu relaxarea și este odihnitoare pentru ochi?",
+        "optiuni": ["Galben", "Mov", "Verde", "Portocaliu"],
+        "raspunsCorect": "Verde"
     },
     {
-        "intrebare": "Care dintre urmatorii artisti NU este renascentist ?",
-        "optiuni": ["Vincent van Gogh", "Rafael", "Michelangelo", "Tiziano"],
-        "raspunsCorect": "Vincent van Gogh"
+        "intrebare": "Care culoare stimulează apetitul în restaurante?",
+        "optiuni": ["Portocaliu", "Albastru", "Negru", "Alb"],
+        "raspunsCorect": "Portocaliu"
+    },
+    {
+        "intrebare": "Care culoare stimulează apetitul?",
+        "optiuni": ["Portocaliu", "Albastru", "Negru", "Alb"],
+        "raspunsCorect": "Portocaliu"
+    },
+    {
+        "intrebare": "Care culoare este percepută ca puritate?",
+        "optiuni": ["Alb", "Negru", "Gri", "Roșu"],
+        "raspunsCorect": "Alb"
+    },
+    {
+        "intrebare": "Ce culoare este adesea asociată cu doliul în culturile estice?",
+        "optiuni": ["Alb", "Negru", "Mov", "Roșu"],
+        "raspunsCorect": "Alb"
+    },
+    {
+        "intrebare": "Ce culoare sugerează sofisticare și stabilitate?",
+        "optiuni": ["Gri", "Albastru", "Verde", "Galben"],
+        "raspunsCorect": "Gri"
     }
 ]

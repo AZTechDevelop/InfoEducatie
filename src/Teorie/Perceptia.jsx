@@ -1,5 +1,6 @@
 import ButtonsComponent from "./buttonComponents";
 import "./stiluri.css";
+import unde from '../imagini/unde.png'
 export default function Perceptia() {
   return (
     <div class="flex h-auto">
@@ -20,16 +21,21 @@ export default function Perceptia() {
           Lumina este o formă de radiație electromagnetică, care variază în
           lungimi de undă. Spectrul vizibil pentru ochiul uman este cuprins
           între 380 nm (violet) și 750 nm (roșu). Fiecare culoare corespunde
-          unei lungimi de undă specifice:
+          unei lungimi de undă specifice.
         </strong>
-        <ul>
-          <li>Violet: 380-450 nm </li>
-          <li>Albastru: 450-495 nm</li>
-          <li>Verde: 495-570 nm</li>
-          <li>Galben: 570-590 nm</li>
-          <li>Portocaliu: 590-620 nm</li>
-          <li>Roșu: 620-750 nm</li>
-        </ul>
+        <strong className="block">nm=nanometru</strong>
+        <div className="flex flex-col lg:flex-row w-full">
+  <ul className="w-full lg:w-2/4 ">
+    <li>Violet: 380-450 nm </li>
+    <li>Albastru: 450-495 nm</li>
+    <li>Verde: 495-570 nm</li>
+    <li>Galben: 570-590 nm</li>
+    <li>Portocaliu: 590-620 nm</li>
+    <li>Roșu: 620-750 nm</li>
+  </ul>
+  <div className="block lg:flex"><img src={unde} alt="unde" /></div>
+</div>
+
         <h2>Fiziologia Percepției Culorilor</h2>
         <strong>
           Percepția culorilor începe în ochi, care conține receptori
@@ -61,21 +67,20 @@ export default function Perceptia() {
           percepția culorilor.
         </p>
         <h2>Factori care Influenteaza Perceptia Culorilor</h2>
-        <label>
+        <p>
           <strong>Iluminarea: </strong>diferite surse de lumină pot schimba
           modul în care vedem culorile.
-        </label>
-        <label>
-          Contextul vizual:{" "}
+        </p>
+        <p>
           <strong>
-            Culorile sunt percepute diferit în funcție de culorile din jur.
+          Contextul vizual:
           </strong>
-          Culorile sunt percepute diferit în funcție de culorile din jur.
-        </label>
-        <label>
-          <strong>Adaptarea cromatică: </strong>Expunerea prelungită la o
+          culorile sunt percepute diferit în funcție de culorile din jur.
+        </p>
+        <p>
+          <strong>Adaptarea cromatică: </strong>expunerea prelungită la o
           culoare poate reduce sensibilitatea la acea culoare.
-        </label>
+        </p>
         <h2>Concluzie </h2>
         <p>
           Percepția culorilor este rezultatul interacțiunii complexe dintre

@@ -1,13 +1,13 @@
 import "./animatii.css";
 
-const WelcomeAnimation = () => {
+const Welcome = () => {
   const text = "Bine a-ți venit";
-  const characters = text.split("");
+  const caractere = text.split("");
 
   return (
     <div className="welcome-container">
       <ul className="fly-in-text">
-        {characters.map((char, index) => (
+        {caractere.map((char, index) => (
           <li
             key={index}
             style={{
@@ -15,7 +15,7 @@ const WelcomeAnimation = () => {
               fontSize: "52px",
               fontFamily: "cursive",
             }}
-            className="text-white font-cursive"
+            className="text-white font-cursive sm:text-md md:text-lg lg:text-xl "
           >
             {char !== " " ? char : "\u00A0"}
           </li>
@@ -25,4 +25,4 @@ const WelcomeAnimation = () => {
   );
 };
 
-export default WelcomeAnimation;
+export default Welcome;

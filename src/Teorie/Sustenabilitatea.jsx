@@ -1,5 +1,11 @@
 import ButtonsComponent from "./buttonComponents";
-import "./stiluri.css";
+import apaPoluata from '../imagini/apaPoluata.jpg'
+import atmosferaPoluata from '../imagini/atmosferaPoluata.webp'
+import deseruriSolide from '../imagini/deseruriSolida.jpg'
+
+import sfeclaPigment from '../imagini/sfeclaPigment.jpg'
+import ecolable from '../imagini/ecolable.jpg'
+import tehnologiiVerzi from '../imagini/tehnologiiVerzi.jpg'
 
 export default function Sustenabilitatea() {
   return (
@@ -17,12 +23,12 @@ export default function Sustenabilitatea() {
           industrie este adesea asociată cu utilizarea de substanțe chimice
           toxice și generarea de deșeuri periculoase. Prin urmare, există o
           nevoie crescută de a adopta practici mai sustenabile (prietenoase cu
-          mediul încorjurător).{" "}
+          mediul încorjurător).
         </strong>
 
         <h2> Impactul ecologic al producției tradiționale de pigmenți </h2>
         <h3>
-          {" "}
+         
           Producția tradițională de pigmenți și vopsele poate avea multiple
           efecte negative asupra mediului:
         </h3>
@@ -40,6 +46,11 @@ export default function Sustenabilitatea() {
           Deșeuri solide: Reziduurile solide, care includ pigmenți neutilizați
           și alte materiale, pot contribui la problema deșeurilor industriale.
         </p>
+        <div className="flex w-full justify-center h-32 items-center my-4">
+    <img className="w-1/4 border border-2 rounded mr-5 h-32" src={apaPoluata} alt="" />
+    <img className="w-1/4 border border-2 rounded mr-5 h-32" src={atmosferaPoluata} alt="" />
+    <img className="w-1/4 border border-2 rounded h-32" src={deseruriSolide} alt="" />
+</div>
 
         <h3>Alternative ecologice la pigmenții tradiționali</h3>
         <p>
@@ -69,7 +80,11 @@ export default function Sustenabilitatea() {
           „EcoLabel” a Uniunii Europene, încurajează companiile să adopte
           practici sustenabile și să producă produse mai sigure pentru mediu.
         </p>
-
+        <div className="flex w-full justify-center h-32 items-center my-4">
+    <img className="w-1/4 border border-2 rounded mr-5 h-32" src={sfeclaPigment} alt="" />
+    <img className="w-1/4 border border-2 rounded mr-5 h-32" src={ecolable} alt="" />
+    <img className="w-1/4 border border-2 rounded h-32" src={tehnologiiVerzi} alt="" />
+</div>
         <h3>Practici inovative care reduc poluarea</h3>
         <p>
           Optimizarea proceselor de producție pentru a reduce consumul de

@@ -25,9 +25,11 @@
   }
 }
 
-.fade-in-delay-1, .fade-in-delay-2, .fade-in-delay-3,.fade-in-delay-4, .fade-in-delay-5,.fade-in-delay-6,.fade-in-delay-7,.fade-in-delay-8,
-.fade-in-delay-9, .fade-in-delay-10, .fade-in-delay-11, .fade-in-delay-12, .fade-in-delay-13
-{
+.fade-in-delay-1, .fade-in-delay-2, .fade-in-delay-3, .fade-in-delay-4, 
+.fade-in-delay-5, .fade-in-delay-6, .fade-in-delay-7, .fade-in-delay-8, 
+.fade-in-delay-9, .fade-in-delay-10, .fade-in-delay-11, .fade-in-delay-12, 
+.fade-in-delay-13, .fade-in-delay-14, .fade-in-delay-15, .fade-in-delay-16,
+ .fade-in-delay-17, .fade-in-delay-18 {
   opacity: 0; 
   animation: fadeIn 1.5s ease-out forwards; 
 }
@@ -51,39 +53,79 @@
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 2.5s; 
 }
+
 .fade-in-delay-5 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 3.0s; 
 }
+
 .fade-in-delay-6 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 3.5s; 
 }
+
 .fade-in-delay-7 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 4.0s; 
 }
+
 .fade-in-delay-8 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 4.5s; 
 }
+
 .fade-in-delay-9 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 5.0s; 
 }
+
 .fade-in-delay-10 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 5.5s; 
 }
+
 .fade-in-delay-11 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 6.0s; 
 }
+
 .fade-in-delay-12 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 6.5s; 
 }
+
 .fade-in-delay-13 {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 7.0s; 
+}
+
+.fade-in-delay-14 {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 7.5s; 
+}
+
+.fade-in-delay-15 {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 8.0s; 
+}
+
+.fade-in-delay-16 {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 8.5s; 
+}
+
+.fade-in-delay-17 {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 9.0s; 
+}
+.fade-in-delay-18 {
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 9.5s; 
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

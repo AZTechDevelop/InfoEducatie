@@ -13,7 +13,7 @@ import Sistemele from './Sistemele.json'
 const quizzes = {
     istoria: Istoria,
     perceptia: Perceptia,
-    pshihologia:Psihologia,
+    psihologia:Psihologia,
     contrastul_in_web_design_si_tehnologie: Contrastul_in_Web_Design_si_Tehnologie,
     contrastul_in_arta: Contrastul_in_arta,
     durabilitatea: Durabilitatea,
