@@ -1,44 +1,44 @@
-
 @keyframes rise {
   from {
-    transform: translateY(0vh); 
+    transform: translateY(0vh);
   }
+
   to {
-    transform: translateY(-200vh); 
+    transform: translateY(-200vh);
   }
 }
 
 
 .welcome-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    overflow: hidden;
-  }
- 
-  .fly-in-text {
-    list-style: none;
-    font-family: 'Open Sans', Arial;
-    font-size: 4em;
-    font-weight: 300;
-  }
-  
-  .fly-in-text li {
-    display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.fly-in-text {
+  list-style: none;
+  font-family: 'Open Sans', Arial;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.fly-in-text li {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: flyIn 1.5s forwards;
+}
+
+@keyframes flyIn {
+  0% {
     opacity: 0;
     transform: translateY(50px);
-    animation: flyIn 1.5s forwards;
   }
-  
-  @keyframes flyIn {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}

@@ -1,5 +1,5 @@
 import "../stiluri.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function MixerCuloareRGBA() {
   const [rosu, setRosu] = useState(0);

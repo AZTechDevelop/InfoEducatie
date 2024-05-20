@@ -1,14 +1,14 @@
- import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Nav from './baraNavigatie';
 
 function NavigatieConditionata() {
-  const location = useLocation();  
+  const location = useLocation();
 
   if (location.pathname === '/') {
     return null;
     // impiedica duplicarea barei de navigatie
   }
-  else{
+  else {
     return <Nav />
   }
 }

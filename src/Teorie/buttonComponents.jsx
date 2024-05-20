@@ -17,29 +17,29 @@ function ButtonsComponent({ currentButton }) {
 
     const handleButtonClick = (buttonNumber) => {
 
-         if (buttonNumber === 1) {
+        if (buttonNumber === 1) {
             navigate('/teorie/introducere');
-        } 
-        else if(buttonNumber === 2){
+        }
+        else if (buttonNumber === 2) {
             navigate('/teorie/istoria')
-        }else if (buttonNumber === 3) {
+        } else if (buttonNumber === 3) {
             navigate('/teorie/perceptia');
         } else if (buttonNumber === 4) {
             navigate('/teorie/psihologia');
         }
-        else if(buttonNumber === 6){
+        else if (buttonNumber === 6) {
             navigate('/teorie/contrastul-in-arta')
         }
-        else if(buttonNumber === 5){
+        else if (buttonNumber === 5) {
             navigate('/teorie/contrastul-in-web-design')
         }
-        else if(buttonNumber === 7){
-        navigate('/teorie/durabilitatea')
+        else if (buttonNumber === 7) {
+            navigate('/teorie/durabilitatea')
         }
-        else if(buttonNumber === 8){
+        else if (buttonNumber === 8) {
             navigate('/teorie/sustenabilitatea')
         }
-        else{
+        else {
             navigate('/teorie/sistemele')
         }
     };
@@ -48,7 +48,7 @@ function ButtonsComponent({ currentButton }) {
         <div className="flex flex-col items-center justify-center w-full">
             {numeButoane.map((nume, index) => {
                 const buttonNumber = index + 1;
-                
+
                 return (
                     <button
                         key={buttonNumber}

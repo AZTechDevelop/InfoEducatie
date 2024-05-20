@@ -28,51 +28,51 @@ function QuizDetails({ quizData, nr }) {
 
     return (
         <>
-        <div className="container mx-auto p-4">
-        
-            {arataRezultate ? (
-                <div>
-                    <h1>Rezultatele Quizului</h1>
-                    <h2 className='text-orange-600'>Ai obținut {optiuniSelectate.filter((opt, index) => quizData[index].raspunsCorect === opt).length} din {quizData.length}</h2>
+            <div className="container mx-auto p-4">
+
+                {arataRezultate ? (
                     <div>
-                        {quizData.map((intrebare, index) => {
-                            const raspunsCorect = intrebare.raspunsCorect;
-                            const raspunsUtilizator = optiuniSelectate[index];
-                            return raspunsUtilizator !== raspunsCorect ? (
-                                <div key={index} className='my-5 lg:my-10'>
-                                    <p>{intrebare.intrebare}</p>
-                                    <p>Răspunsul tău: {raspunsUtilizator}</p>
-                                    <p>Răspuns corect: {raspunsCorect}</p>
-                                </div>
-                            ) : null;
-                        })}
+                        <h1>Rezultatele Quizului</h1>
+                        <h2 className='text-orange-600'>Ai obținut {optiuniSelectate.filter((opt, index) => quizData[index].raspunsCorect === opt).length} din {quizData.length}</h2>
+                        <div>
+                            {quizData.map((intrebare, index) => {
+                                const raspunsCorect = intrebare.raspunsCorect;
+                                const raspunsUtilizator = optiuniSelectate[index];
+                                return raspunsUtilizator !== raspunsCorect ? (
+                                    <div key={index} className='my-5 lg:my-10'>
+                                        <p>{intrebare.intrebare}</p>
+                                        <p>Răspunsul tău: {raspunsUtilizator}</p>
+                                        <p>Răspuns corect: {raspunsCorect}</p>
+                                    </div>
+                                ) : null;
+                            })}
+                        </div>
+                        <button onClick={restartQuiz} className="ml-10 mt-5 p-4 bg-blue-500 text-white rounded hover:bg-blue-700 flex justify-center items-center">
+                            Restart Quiz
+                        </button>
+                        <NavLink to="/quizz-uri"
+                            onClick={restartQuiz}
+                            className=" items-center text-2xl duration-500 flex ml-10 mt-5 p-4 bg-blue-500 text-white rounded hover:bg-blue-700 flex justify-center items-center">
+                            Incearcă alt quiz
+
+                        </NavLink>
                     </div>
-                    <button onClick={restartQuiz} className="ml-10 mt-5 p-4 bg-blue-500 text-white rounded hover:bg-blue-700 flex justify-center items-center">
-                        Restart Quiz
-                    </button>
-                    <NavLink to="/quizz-uri"
-                     onClick={restartQuiz} 
-                     className=" items-center text-2xl duration-500 flex ml-10 mt-5 p-4 bg-blue-500 text-white rounded hover:bg-blue-700 flex justify-center items-center">
-                        Incearcă alt quiz
-                  
-                         </NavLink>
-                </div>
-            ) : (
-                <div>
-                    <h2 className="text-center">{quizData[intrebareCurenta].intrebare}</h2>
+                ) : (
                     <div>
-                        {quizData[intrebareCurenta].optiuni.map((optiune, index) => (
-                            <button key={index} onClick={() => selecteazaOptiune(optiune)} className="w-full my-2 text-blue-900 hover:bg-gray-600 hover:text-white duration-500">
-                                {optiune}
-                            </button>
-                        ))}
+                        <h2 className="text-center">{quizData[intrebareCurenta].intrebare}</h2>
+                        <div>
+                            {quizData[intrebareCurenta].optiuni.map((optiune, index) => (
+                                <button key={index} onClick={() => selecteazaOptiune(optiune)} className="w-full my-2 text-blue-900 hover:bg-gray-600 hover:text-white duration-500">
+                                    {optiune}
+                                </button>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            )}
-        </div>
-        <div>
-            
-        </div>
+                )}
+            </div>
+            <div>
+
+            </div>
         </>
     );
 }

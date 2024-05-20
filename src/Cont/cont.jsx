@@ -10,7 +10,7 @@ const Cont = () => {
         email: '',
         parola: '',
         confirmaParola: '',
-        actiune: 'inregistrare',  
+        actiune: 'inregistrare',
     });
     const [erori, setErori] = useState({});
     const [mesaj, setMesaj] = useState('');
@@ -116,7 +116,7 @@ const Cont = () => {
                     {erori.parola && <p className="text-red-500 text-sm">{erori.parola}</p>}
                 </div>
 
-                {dateFormular.actiune === 'inregistrare' && (                     
+                {dateFormular.actiune === 'inregistrare' && (
                     <div className="mb-4">
                         <label htmlFor="confirmaParola" className="block text-sm font-medium text-gray-700">
                             Confirmă Parola

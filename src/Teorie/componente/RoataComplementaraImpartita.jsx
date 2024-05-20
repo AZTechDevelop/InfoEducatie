@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function RoataCulorilorSplitComplementary() {
   const [segmentSelectat, setSegmentSelectat] = useState(null);
 
-  
+
   const culori = [
     "rgb(255, 69, 0)", // redOrange
     "rgb(255, 0, 0)", // red

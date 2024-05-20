@@ -110,8 +110,8 @@ const RoataCulori = () => {
 
   return (
     <div className="flex flex-col items-center p-4 ">
-      <svg width={raza * 2} height={raza * 2} viewBox={`0 0 ${raza * 2} ${raza * 2}`} 
-      className='sm:h-64 sm:w-64  xl:h-128 xl:w-128'>
+      <svg width={raza * 2} height={raza * 2} viewBox={`0 0 ${raza * 2} ${raza * 2}`}
+        className='sm:h-64 sm:w-64  xl:h-128 xl:w-128'>
         {culori.map((culoare, index) => (
           <path
             key={index}

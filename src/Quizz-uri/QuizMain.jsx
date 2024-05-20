@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import QuizDetails from './QuizDetails';
 import Istoria from './Istoria.json';
@@ -14,17 +13,17 @@ import './quiz.css'
 const quizzes = {
     istoria: Istoria,
     perceptia: Perceptia,
-    psihologia:Psihologia,
+    psihologia: Psihologia,
     contrastul_in_web_design_si_tehnologie: Contrastul_in_Web_Design_si_Tehnologie,
     contrastul_in_arta: Contrastul_in_arta,
     durabilitatea: Durabilitatea,
-    sustenabilitatea:Sustenabilitatea,
-    sistemele:Sistemele,
+    sustenabilitatea: Sustenabilitatea,
+    sistemele: Sistemele,
 };
 
 function QMain() {
-    const { quizType } = useParams(); 
-    const quizData = quizzes[quizType]; 
+    const { quizType } = useParams();
+    const quizData = quizzes[quizType];
 
     if (!quizData) {
         return <div>Quiz not found.</div>;
@@ -34,7 +33,7 @@ function QMain() {
         <div className='mt-5'>
             <h1>Quiz  {quizType.replace(/_/g, ' ')}</h1>
             <QuizDetails quizData={quizData} className="btn" />
-            
+
 
         </div>
     );

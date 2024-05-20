@@ -70,9 +70,9 @@ export default function Acasa() {
                 sisteme al unei culori, treceți mouse-ul peste culoarea
                 respectivă sau faceți clic pe ea.
               </p>
-              </div>
+            </div>
             <div className="fade-in-delay-15">
-            <RoataCulorilor className="w-1/4 " />
+              <RoataCulorilor className="w-1/4 " />
             </div>
           </div>
           <div className="incheiere text-center p-5 mt-5 ">

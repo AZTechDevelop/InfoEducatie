@@ -27,41 +27,41 @@ export default function Quiz() {
 
 
   return (
-  
-<div >
-<div className="relative w-full h-screen overflow-hidden">
-      <div className="absolute w-full h-full z-0">
-    <EfectBule />
-    </div>
-  <div className="container w-full mx-auto p-4">
-    <div className="flex flex-wrap justify-center items-center gap-4 w-full">
-      {Object.keys(quizzes).map((quizName, index) => (
-        <Link
-          to={`/quizz-uri/${quizName.replace(/\s/g, "_").toLowerCase()}`}
-          key={index}
-          className="w-full sm:w-full md:w-1/2 lg:w-1/3 flex justify-center"
-        >
-          <button
-            className="w-full bg-gray-600 px-5 py-3 h-auto text-2xl rounded-lg text-white 
+
+    <div >
+      <div className="relative w-full h-screen overflow-hidden">
+        <div className="absolute w-full h-full z-0">
+          <EfectBule />
+        </div>
+        <div className="container w-full mx-auto p-4">
+          <div className="flex flex-wrap justify-center items-center gap-4 w-full">
+            {Object.keys(quizzes).map((quizName, index) => (
+              <Link
+                to={`/quizz-uri/${quizName.replace(/\s/g, "_").toLowerCase()}`}
+                key={index}
+                className="w-full sm:w-full md:w-1/2 lg:w-1/3 flex justify-center"
+              >
+                <button
+                  className="w-full bg-gray-600 px-5 py-3 h-auto text-2xl rounded-lg text-white 
                         hover:bg-gray-800 duration-500 flex items-center justify-center text-center
                         break-words whitespace-normal
                         text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
-          >
-            {quizName.replace(/_/g, " ")}
-          </button>
-        </Link>
-      ))}
+                >
+                  {quizName.replace(/_/g, " ")}
+                </button>
+              </Link>
+            ))}
+          </div>
+          <Routes>
+            {Object.keys(quizzes).map((quizName, index) => (
+              <Route
+                path={`/quizz-uri/${quizName.replace(/\s/g, "_").toLowerCase()}`}
+                key={index}
+                element={<QuizDetails quizData={quizzes[quizName]} />}
+              />
+            ))}
+          </Routes>
         </div>
-        <Routes>
-          {Object.keys(quizzes).map((quizName, index) => (
-            <Route
-              path={`/quizz-uri/${quizName.replace(/\s/g, "_").toLowerCase()}`}
-              key={index}
-              element={<QuizDetails quizData={quizzes[quizName]} />}
-            />
-          ))}
-        </Routes>
-      </div>
       </div>
     </div>
   );

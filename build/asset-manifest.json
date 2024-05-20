@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/InfoEducatie/static/css/main.45b5948b.css",
-    "main.js": "/InfoEducatie/static/js/main.57e402a2.js",
+    "main.css": "/InfoEducatie/static/css/main.1a3abb5a.css",
+    "main.js": "/InfoEducatie/static/js/main.16c775c0.js",
     "static/js/453.856783c9.chunk.js": "/InfoEducatie/static/js/453.856783c9.chunk.js",
     "static/media/batik.jpg": "/InfoEducatie/static/media/batik.b53c80b0e59b374e4b91.jpg",
+    "static/media/deseruriSolida.jpg": "/InfoEducatie/static/media/deseruriSolida.66b7bf098938e1d10932.jpg",
+    "static/media/apaPoluata.jpg": "/InfoEducatie/static/media/apaPoluata.94056cccde1e44aa151a.jpg",
     "static/media/RedFuneral.jpg": "/InfoEducatie/static/media/RedFuneral.e8ea750083aa772a27e6.jpg",
     "static/media/picturapre3.jpg": "/InfoEducatie/static/media/picturapre3.dddaa3c3525dae3f2369.jpg",
     "static/media/picturapre2.jpg": "/InfoEducatie/static/media/picturapre2.e696ccf56db56c7f8585.jpg",
     "static/media/tuk.jpg": "/InfoEducatie/static/media/tuk.77774a00293c49c6fa2f.jpg",
+    "static/media/atmosferaPoluata.webp": "/InfoEducatie/static/media/atmosferaPoluata.840581e8bcaff3571359.webp",
     "static/media/rel2.jpg": "/InfoEducatie/static/media/rel2.bd1bf541757bb3a63fa1.jpg",
     "static/media/MonaLisa.jpg": "/InfoEducatie/static/media/MonaLisa.f40bdb5410e67ca27f48.jpg",
     "static/media/regal.jpg": "/InfoEducatie/static/media/regal.c2e8263f3ab0122cb56c.jpg",
+    "static/media/unde.png": "/InfoEducatie/static/media/unde.70e75d870afa99e12e00.png",
     "static/media/CF.jpg": "/InfoEducatie/static/media/CF.c6dd01e56f5d0a4fe30a.jpg",
     "static/media/modern.jpg": "/InfoEducatie/static/media/modern.26fc725862b83f258dfb.jpg",
     "static/media/cubism.jpg": "/InfoEducatie/static/media/cubism.1f50c314f7315b010cd9.jpg",
+    "static/media/ecolable.jpg": "/InfoEducatie/static/media/ecolable.e1b08c2a68636dc1f923.jpg",
+    "static/media/tehnologiiVerzi.jpg": "/InfoEducatie/static/media/tehnologiiVerzi.618d6a6fe25131a978ce.jpg",
     "static/media/egip2.jpg": "/InfoEducatie/static/media/egip2.f4d9b46dd4394607cdd4.jpg",
     "static/media/rel1.jpg": "/InfoEducatie/static/media/rel1.bdc8c60c5490e5bff3b7.jpg",
     "static/media/palet.avif": "/InfoEducatie/static/media/palet.47150820a94a2f167033.avif",
+    "static/media/sfeclaPigment.jpg": "/InfoEducatie/static/media/sfeclaPigment.e7cf36c28ec122521cdc.jpg",
     "static/media/CINA.jpg": "/InfoEducatie/static/media/CINA.c8ac7d6d879ea89eae3e.jpg",
     "static/media/egipt1.jpg": "/InfoEducatie/static/media/egipt1.3c8c3a262454da7350aa.jpg",
     "static/media/surse.webp": "/InfoEducatie/static/media/surse.1047c4b8170ef6985254.webp",
@@ -28,12 +35,12 @@
     "static/media/NI.jpeg": "/InfoEducatie/static/media/NI.d6b7f6f9d83e5e7264b0.jpeg",
     "static/media/picturapre.jpeg": "/InfoEducatie/static/media/picturapre.32952db022c2e13e8940.jpeg",
     "index.html": "/InfoEducatie/index.html",
-    "main.45b5948b.css.map": "/InfoEducatie/static/css/main.45b5948b.css.map",
-    "main.57e402a2.js.map": "/InfoEducatie/static/js/main.57e402a2.js.map",
+    "main.1a3abb5a.css.map": "/InfoEducatie/static/css/main.1a3abb5a.css.map",
+    "main.16c775c0.js.map": "/InfoEducatie/static/js/main.16c775c0.js.map",
     "453.856783c9.chunk.js.map": "/InfoEducatie/static/js/453.856783c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45b5948b.css",
-    "static/js/main.57e402a2.js"
+    "static/css/main.1a3abb5a.css",
+    "static/js/main.16c775c0.js"
   ]
 }

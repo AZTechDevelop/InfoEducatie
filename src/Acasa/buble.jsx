@@ -27,15 +27,15 @@ function EfectBule() {
         );
       }, duration * 500);
 
-     
-      setTimeout(createBubble, 1000); 
+
+      setTimeout(createBubble, 1000);
       //adauga o bula la fiecare secunda
     };
 
     createBubble();
 
     return () => {
-      setB([]); 
+      setB([]);
     };
   }, []);
 
@@ -49,7 +49,7 @@ function EfectBule() {
             width: `${bule.size}px`,
             height: `${bule.size}px`,
             left: `${bule.left}%`,
-            bottom: `-150px`, 
+            bottom: `-150px`,
             animation: `rise ${bule.duration}s linear infinite`,
           }}
         />

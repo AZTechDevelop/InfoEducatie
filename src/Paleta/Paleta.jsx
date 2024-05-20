@@ -83,7 +83,8 @@ function CreatorPaleta() {
     };
 
     return (
-        <div className="flex  pt-5" style={{ height: 'auto' , paddingTop:'100px'
+        <div className="flex  pt-5" style={{
+            height: 'auto', paddingTop: '100px'
         }}>
             <div className="w-1/2 flex flex-col items-center justify-center" style={{ marginTop: '-100px' }}>
                 <div className="flex w-full items-center justify-center my-3 sticky rounded focus:outline-none focus:shadow-outline">

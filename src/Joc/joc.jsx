@@ -11,7 +11,7 @@ function Joc() {
     const [pickedColor, setPickedColor] = useState("");
     const [bestScore, setBestScore] = useState(0);
     const [difficulty, setDifficulty] = useState(4);
-   
+
 
     useEffect(() => {
         resetGame();
@@ -36,10 +36,10 @@ function Joc() {
         if (color === pickedColor) {
             setCorrectCounter(prev => prev + 1);
             setBestScore(prev => Math.max(prev, correctCounter + 1));
-            reset(); 
+            reset();
         } else {
             setScore(prev => prev - 1);
-            setColors(prevColors => prevColors.map((item, idx) => 
+            setColors(prevColors => prevColors.map((item, idx) =>
                 idx === index ? 'black' : item
             ));
             if (score - 1 === 0) {
@@ -73,7 +73,7 @@ function Joc() {
 
     const changeDifficulty = (newDifficulty) => {
         setNumSquares(newDifficulty);
-        setDifficulty(newDifficulty); 
+        setDifficulty(newDifficulty);
         reset();
     };
 
@@ -98,9 +98,9 @@ function Joc() {
 
 
             <div className="infoList flex">
-                <label className="infoItem py-2" style={{color: 'rgb(239 68 68)'}}>Vieti: {score}</label>
-                <label className="infoItem py-2" style={{color: 'rgb(234 179 8)'}}>Scor Actual: {correctCounter}</label>
-                <label className="infoItem py-2" style={{color:'rgb(59 130 246)'}}>Cel Mai Bun Scor: {bestScore}</label>
+                <label className="infoItem py-2" style={{ color: 'rgb(239 68 68)' }}>Vieti: {score}</label>
+                <label className="infoItem py-2" style={{ color: 'rgb(234 179 8)' }}>Scor Actual: {correctCounter}</label>
+                <label className="infoItem py-2" style={{ color: 'rgb(59 130 246)' }}>Cel Mai Bun Scor: {bestScore}</label>
             </div>
 
             <span id="color-display">{pickedColor}</span>
