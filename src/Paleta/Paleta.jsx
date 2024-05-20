@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { SketchPicker } from 'react-color';
+import { useMediaQuery } from '@react-hook/media-query';
 
 function CreatorPaleta() {
+    const isScreenBelowMd = useMediaQuery('(max-width: 768px)');
     const [palete, setPalete] = useState([]);
     const [culori, setCulori] = useState([]);
     const [culoareSelectata, setCuloareSelectata] = useState('#ffffff');
@@ -86,21 +88,24 @@ function CreatorPaleta() {
         <div className="flex  pt-5" style={{
             height: 'auto', paddingTop: '100px'
         }}>
-            <div className="w-1/2 flex flex-col items-center justify-center" style={{ marginTop: '-100px' }}>
-                <div className="flex w-full items-center justify-center my-3 sticky rounded focus:outline-none focus:shadow-outline">
+          <div className={`w-1/2 xl:w-1/2 md:flex flex-col items-center justify-center ${isScreenBelowMd ? 'block' : 'hidden'} `}
+          style={{marginTop:'-100px'}}
+          >
+
+                <div className="md:flex  block w-full items-center justify-center my-3 sticky rounded focus:outline-none focus:shadow-outline">
                     <input
-                        className="py-2 border rounded w-2/5 text-center text-2xl"
+                        className="ml-3 py-2 border rounded w-2/5 md:text-base sm:text-sm xl:text-xl xl:text-2xl  text-center text-sm"
                         placeholder="Nume Paleta"
                         value={numePaleta}
                         onChange={e => setNumePaleta(e.target.value)}
                     />
-                    <button className="text-2xl w-2/5 ml-2 bg-green-500 text-white font-bold rounded focus:outline-none focus:shadow-outline" onClick={salveazaPaleta}>
+                    <button className="text-xs md:text-base sm:text-sm xl:text-xl xl:text-2xl w-2/5 ml-2 bg-green-500 text-white font-bold rounded focus:outline-none focus:shadow-outline" onClick={salveazaPaleta}>
                         Salvează Paleta
                     </button>
                 </div>
-                <SketchPicker color={culoareSelectata} onChangeComplete={schimbaCuloare} width="50%" height="50" />
+                <SketchPicker color={culoareSelectata} onChangeComplete={schimbaCuloare} width="45%" height="50" />
                 <div className="w-full relative items-center flex">
-                    <button className="mt-4 ml-5 text-xl bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-2/5" onClick={adaugaCuloare}>
+                    <button className="text-xs md:text-base sm:text-sm xl:text-xl xl:text-2xl mt-4 ml-5 text-xl bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-2/5" onClick={adaugaCuloare}>
                         Adaugă Culoare
                     </button>
                 </div>
@@ -112,20 +117,20 @@ function CreatorPaleta() {
                     ))}
                 </div>
             </div>
-            <div className="w-1/2 flex flex-col items-center justify-start overflow-auto p-4 saved-palettes-container">
-                <p className="py-3 text-4xl text-black font-bold">Palete Salvate</p>
+            <div className="w-full xl:w-1/2 xl:flex block flex-col items-center justify-start overflow-auto p-4 saved-palettes-container">
+                <p className="text-xs md:text-xl sm:text-base lg:text-2xl xl:text-3xl py-3 text-4xl text-black font-bold">Palete Salvate</p>
                 {palete.map((paleta, index) => (
-                    <div key={index} className="flex flex-col items-center justify-between bg-gray-600 text-white py-2 px-3 rounded w-4/5 mb-2">
-                        <div className="flex w-full justify-between">
-                            <span className="cursor-pointer w-1/6" onClick={() => incarcaPaleta(paleta)}>{paleta.nume}</span>
+                    <div key={index} className="block xl:flex flex-col items-center justify-between bg-gray-600 text-white py-2 px-3 rounded w-4/5 mb-2">
+                        <div className="block xl:flex w-full justify-between">
+                            <span className="text-xs md:text-base sm:text-sm lg:text-xl xl:text-2xl cursor-pointer w-1/6" onClick={() => incarcaPaleta(paleta)}>{paleta.nume}</span>
                             <div className='w-5/6 flex'>
-                                <button className="text-white bg-green-600 px-2 text-xl rounded mx-2 w-auto" onClick={() => afiseazaPaleta(paleta)}>
+                                <button className="text-xs md:text-base sm:text-sm xl:text-xl xl:text-2xl text-white bg-green-600 px-2 text-xl rounded mx-2 w-auto" onClick={() => afiseazaPaleta(paleta)}>
                                     {paletaAfisata && paletaAfisata.id === paleta.id ? 'Ascunde' : 'Afișează'}
                                 </button>
-                                <button className="text-white mx-2 bg-blue-800 px-2 rounded w-auto text-xl" onClick={() => incarcaPaleta(paleta)}>
+                                <button className="text-xs md:text-base sm:text-sm xl:text-xl xl:text-2xl text-white mx-2 bg-blue-800 px-2 rounded w-auto text-xl" onClick={() => incarcaPaleta(paleta)}>
                                     {editarePaletaId === paleta.id ? 'Închide Editare' : 'Editează'}
                                 </button>
-                                <button className="text-white mx-2 bg-red-800 px-2 rounded w-auto text-xl" onClick={() => stergePaleta(paleta.id)}>Șterge</button>
+                                <button className="text-xs md:text-base sm:text-sm xl:text-xl xl:text-2xl text-white mx-2 bg-red-800 px-2 rounded w-auto text-xl" onClick={() => stergePaleta(paleta.id)}>Șterge</button>
                             </div>
                         </div>
                         {paletaAfisata && paletaAfisata.id === paleta.id && (
