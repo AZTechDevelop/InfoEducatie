@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/InfoEducatie/static/css/main.1a3abb5a.css",
+    "main.css": "/InfoEducatie/static/css/main.e4a607d6.css",
     "main.js": "/InfoEducatie/static/js/main.16c775c0.js",
     "static/js/453.856783c9.chunk.js": "/InfoEducatie/static/js/453.856783c9.chunk.js",
     "static/media/batik.jpg": "/InfoEducatie/static/media/batik.b53c80b0e59b374e4b91.jpg",
@@ -35,12 +35,12 @@
     "static/media/NI.jpeg": "/InfoEducatie/static/media/NI.d6b7f6f9d83e5e7264b0.jpeg",
     "static/media/picturapre.jpeg": "/InfoEducatie/static/media/picturapre.32952db022c2e13e8940.jpeg",
     "index.html": "/InfoEducatie/index.html",
-    "main.1a3abb5a.css.map": "/InfoEducatie/static/css/main.1a3abb5a.css.map",
+    "main.e4a607d6.css.map": "/InfoEducatie/static/css/main.e4a607d6.css.map",
     "main.16c775c0.js.map": "/InfoEducatie/static/js/main.16c775c0.js.map",
     "453.856783c9.chunk.js.map": "/InfoEducatie/static/js/453.856783c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a3abb5a.css",
+    "static/css/main.e4a607d6.css",
     "static/js/main.16c775c0.js"
   ]
 }
